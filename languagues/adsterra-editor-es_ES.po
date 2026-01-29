@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: Adsterra Editor 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-27 12:00+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2023-10-27 12:00+0000\n"
+"Last-Translator: NeoPunto <info@neopunto.com>\n"
+"Language-Team: NeoPunto <info@neopunto.com>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -14,140 +14,140 @@ msgstr ""
 
 #: adsterra-editor.php:38
 msgid "Global Settings"
-msgstr ""
+msgstr "Configuración Global"
 
 #: adsterra-editor.php:44
 msgid "Global Scripts (Popunder, Push, etc.)"
-msgstr ""
+msgstr "Scripts Globales (Popunder, Push, etc.)"
 
 #: adsterra-editor.php:51
 msgid "Automatic Insertion"
-msgstr ""
+msgstr "Inserción Automática"
 
 #: adsterra-editor.php:57
 msgid "Start of Post (Single)"
-msgstr ""
+msgstr "Inicio de la Entrada (Single)"
 
 #: adsterra-editor.php:58
 msgid "Middle of Post (Single)"
-msgstr ""
+msgstr "Mitad de la Entrada (Single)"
 
 #: adsterra-editor.php:59
 msgid "End of Post (Single)"
-msgstr ""
+msgstr "Final de la Entrada (Single)"
 
 #: adsterra-editor.php:60
 msgid "Blog Home - Top (Before Posts)"
-msgstr ""
+msgstr "Blog Inicio - Arriba (Antes de Entradas)"
 
 #: adsterra-editor.php:61
 msgid "Blog Home - Bottom (After Posts)"
-msgstr ""
+msgstr "Blog Inicio - Abajo (Después de Entradas)"
 
 #: adsterra-editor.php:73
 msgid "Ad Zones (Banners)"
-msgstr ""
+msgstr "Zonas de Anuncios (Banners)"
 
 #: adsterra-editor.php:80 adsterra-editor.php:177
 #, php-format
 msgid "Ad Zone #%d"
-msgstr ""
+msgstr "Zona de Anuncio #%d"
 
 #: adsterra-editor.php:115
 msgid "Adsterra Editor"
-msgstr ""
+msgstr "Adsterra Editor"
 
 #: adsterra-editor.php:123
 msgid "Enter scripts that should be loaded globally (e.g., in the footer), such as Popunders, Push Notifications, or Direct Link scripts."
-msgstr ""
+msgstr "Introduce scripts que deban cargarse globalmente (ej. en el footer), como Popunders, Notificaciones Push o scripts de Direct Link."
 
 #: adsterra-editor.php:127
 msgid "Automatically insert ads into your posts and pages without using widgets or shortcodes."
-msgstr ""
+msgstr "Inserta anuncios automáticamente en tus entradas y páginas sin usar widgets ni shortcodes."
 
 #: adsterra-editor.php:131
 msgid "Enter your banner ad codes here. You can display them using the shortcode [adsterra_ad id=\"X\"], the Widget, or the Automatic Insertion settings above."
-msgstr ""
+msgstr "Introduce tus códigos de banner aquí. Puedes mostrarlos usando el shortcode [adsterra_ad id=\"X\"], el Widget o la configuración de Inserción Automática."
 
 #: adsterra-editor.php:175 adsterra-editor.php:336
 msgid "Disabled"
-msgstr ""
+msgstr "Desactivado"
 
 #: adsterra-editor.php:177 adsterra-editor.php:345
 #, php-format
 msgid "Zone #%d"
-msgstr ""
+msgstr "Zona #%d"
 
 #: adsterra-editor.php:187
 #, php-format
 msgid "Use shortcode: <code>[adsterra_ad id=\"%d\"]</code>"
-msgstr ""
+msgstr "Usa el shortcode: <code>[adsterra_ad id=\"%d\"]</code>"
 
 #: includes/class-adsterra-widget.php:17
 msgid "Adsterra Editor Banner"
-msgstr ""
+msgstr "Adsterra Editor Banner"
 
 #: includes/class-adsterra-widget.php:18
 msgid "Displays a Adsterra banner from your saved zones."
-msgstr ""
+msgstr "Muestra un banner de Adsterra de tus zonas guardadas."
 
 #: includes/class-adsterra-widget.php:62
 msgid "Title:"
-msgstr ""
+msgstr "Título:"
 
 #: includes/class-adsterra-widget.php:66
 msgid "Select Ad Zone:"
-msgstr ""
+msgstr "Seleccionar Zona de Anuncio:"
 
 #: adsterra-editor.php:31
 msgid "API Integration"
-msgstr ""
+msgstr "Integración API"
 
 #: adsterra-editor.php:37
 msgid "Adsterra API Token"
-msgstr ""
+msgstr "Token API Adsterra"
 
 #: adsterra-editor.php:129
 msgid "Enter your Adsterra API Token to view statistics in the Dashboard."
-msgstr ""
+msgstr "Introduce tu Token API de Adsterra para ver estadísticas en el Escritorio."
 
 #: adsterra-editor.php:151
 msgid "You can find your API Token in your Adsterra account settings."
-msgstr ""
+msgstr "Puedes encontrar tu Token API en la configuración de tu cuenta de Adsterra."
 
 #: includes/class-adsterra-dashboard.php:26
 msgid "Adsterra Statistics (NeoPunto)"
-msgstr ""
+msgstr "Estadísticas Adsterra (NeoPunto)"
 
 #: includes/class-adsterra-dashboard.php:39
 #, php-format
 msgid "Please enter your API Token in the <a href=\"%s\">settings page</a> to view statistics."
-msgstr ""
+msgstr "Por favor introduce tu Token API en la <a href=\"%s\">página de ajustes</a> para ver estadísticas."
 
 #: includes/class-adsterra-dashboard.php:84
 msgid "Invalid response from Adsterra API (Balance)."
-msgstr ""
+msgstr "Respuesta inválida de la API de Adsterra (Balance)."
 
 #: includes/class-adsterra-dashboard.php:88
 msgid "Unknown API error."
-msgstr ""
+msgstr "Error de API desconocido."
 
 #: includes/class-adsterra-dashboard.php:154
 msgid "Current Balance"
-msgstr ""
+msgstr "Balance Actual"
 
 #: includes/class-adsterra-dashboard.php:163
 msgid "Today's Impressions"
-msgstr ""
+msgstr "Impresiones de Hoy"
 
 #: includes/class-adsterra-dashboard.php:167
 msgid "Today's Clicks"
-msgstr ""
+msgstr "Clics de Hoy"
 
 #: includes/class-adsterra-dashboard.php:171
 msgid "Today's Revenue"
-msgstr ""
+msgstr "Ingresos de Hoy"
 
 #: includes/class-adsterra-dashboard.php:177
 msgid "Data cached for 15 mins."
-msgstr ""
+msgstr "Datos cacheados por 15 mins."
