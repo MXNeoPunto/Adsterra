@@ -322,6 +322,23 @@ function adsterra_editor_options_page() {
 }
 
 /**
+ * Get excluded Page/Post IDs as an array (Cached)
+ *
+ * @return array
+ */
+function adsterra_editor_get_exclude_ids() {
+	static $exclude_ids = null;
+
+	if ( is_null( $exclude_ids ) ) {
+		$options     = get_option( 'adsterra_editor_settings' );
+		$excludes    = isset( $options['global_scripts_exclude_ids'] ) ? $options['global_scripts_exclude_ids'] : '';
+		$exclude_ids = ! empty( $excludes ) ? array_map( 'intval', explode( ',', $excludes ) ) : array();
+	}
+
+	return $exclude_ids;
+}
+
+/**
  * Frontend: Output Global Scripts in Footer
  */
 function adsterra_editor_output_global_scripts() {
@@ -332,12 +349,11 @@ function adsterra_editor_output_global_scripts() {
 	}
 
 	$behavior = isset( $options['global_scripts_behavior'] ) ? $options['global_scripts_behavior'] : 'all';
-	$excludes = isset( $options['global_scripts_exclude_ids'] ) ? $options['global_scripts_exclude_ids'] : '';
 
 	// 1. Check Exclusions
-	if ( ! empty( $excludes ) ) {
-		$exclude_ids = array_map( 'intval', explode( ',', $excludes ) );
-		$current_id  = get_queried_object_id();
+	$exclude_ids = adsterra_editor_get_exclude_ids();
+	if ( ! empty( $exclude_ids ) ) {
+		$current_id = get_queried_object_id();
 		if ( in_array( $current_id, $exclude_ids, true ) ) {
 			return; // Excluded
 		}
@@ -393,9 +409,8 @@ function adsterra_editor_output_smart_link() {
 		}
 	}
 	
-	$excludes = isset( $options['global_scripts_exclude_ids'] ) ? $options['global_scripts_exclude_ids'] : '';
-	if ( ! empty( $excludes ) ) {
-		$exclude_ids = array_map( 'intval', explode( ',', $excludes ) );
+	$exclude_ids = adsterra_editor_get_exclude_ids();
+	if ( ! empty( $exclude_ids ) ) {
 		if ( in_array( get_queried_object_id(), $exclude_ids, true ) ) {
 			return;
 		}
